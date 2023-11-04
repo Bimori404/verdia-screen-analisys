@@ -1,0 +1,198 @@
+/* regular 400 - bold 700 */
+@import url('https://fonts.cdnfonts.com/css/inter');
+
+@import url('modal.css');
+
+.font-bold {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+.font-regular {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+:root {
+    /* --primariBackground: #F4EED0; */
+    --menuTextColor: #2F5904;
+    --logoTextColor: #51742E;
+    --headerTextColor: #3D7406;
+    --dashedColor: #0F4C6B;
+    --containerDropColor: #fff;
+}
+
+.div-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.dashed {
+    border: 1.4px dashed var(--dashedColor);
+}
+
+.text-weight {
+    font-weight: bold;
+}
+
+/* -------------------------------------------------------------------- */
+
+.nav-container {
+    padding-top: 1rem;
+}
+
+.space-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* .logoText {
+    color: var(--logoTextColor);
+    font-size: 28px;
+    /* font-size: 64px; */
+    /* font-weight: 800; 
+} */
+/* --- */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 100px; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* Esto mantiene la proporción original */
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+/* --- */
+.menu {
+    padding: 10px;
+    margin-top: .5rem;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    /* font-size: 24px; */
+    color: var(--menuTextColor);
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* -------------------------------------------------------------------- */
+
+.section-content {
+    margin-top: 5rem;
+}
+
+.text-color {
+    color: var(--headerTextColor);
+    font-size: 55px;
+    /* font-size: 96px; */
+    letter-spacing: 2px;
+}
+
+/* -------------------------------------------------------------------- */
+
+.margin-container {
+    margin-left: 17rem;
+    margin-right: 17rem;
+}
+
+#drop-container {
+    background-color: var(--containerDropColor);
+    text-align: center;
+    padding: 2rem;
+    cursor: pointer;
+    font-size: 15px;
+
+    border-radius: 14px;
+    box-shadow: 3px 18px 50px -18px rgba(0, 0, 0, 0.35);
+    letter-spacing: -.75px;
+    margin-bottom: .5rem;
+}
+
+.drop-text {
+    color: #A8A8A8;
+    font-size: 20px;
+
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#preview-image {
+    max-width: 100%;
+    max-height: 400px;
+    display: inline-block;
+}
+
+.div-button {
+    background: #51742E;
+    border-color: #51742E;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.div-button:hover {
+    background: #ffc107;
+    border-color: #ffc107;
+}
+
+.div-button.active,
+.div-button:active,
+.div-button:focus {
+    background-color: #51742E;
+    border-color: #51742E;
+    color: #fff;
+    box-shadow: none;
+}
+
+
+/* -------------------------------------------------------------------- */
+
+/* Estilos para pantallas de tamaño de celular (hasta 990px) */
+@media (max-width: 990px) {
+
+    section.container.mt-5 {
+        padding-top: 2rem;
+    }
+
+    .text-color {
+        font-size: 35px;
+    }
+
+    #drop-container {
+        font-size: 5px;
+    }
+
+    .margin-container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .drop-text {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 15px;
+    }
+}

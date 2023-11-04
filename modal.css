@@ -1,0 +1,162 @@
+.modal-content {
+    width: 600px;
+    height: 500px;
+    border-radius: 5px;
+    background-color: #F4EED0;
+}
+
+.modal-body {
+    height: 500px;
+    border-radius: 5px;
+    background-color: #F4EED0;
+}
+
+.div-left-modal {
+    /* Arriba | Derecha | Abajo | Izquierda */
+    padding: 2rem .5rem 2rem .5rem;
+    border-radius: 5px;
+}
+
+.div-right-modal {
+    /* background-color: #dfd9bb; */
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#image-history-container {
+    background-color: #dfd9bb;
+    overflow: auto;
+    max-height: 400px;
+}
+
+/* ------------------------------------------------------- */
+
+.div-center-modal {
+    /* 
+    para cetrar el elemento se tiene que llamar a "modal-dialog" pero se deforma la preview
+    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#modal-preview-image {
+    width: 300px;
+    /* ancho */
+    height: 300px;
+    /* alto */
+}
+
+/* ------------------------------------------------------- */
+/* Estilo para el contenedor de las tarjetas */
+
+.card-elements {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    margin-top: .5rem;
+
+    width: 200px;
+    height: 60px;
+
+    border: 1px solid #51742E;
+    background-color: #51742E;
+    border-radius: 5px;
+
+    color: azure;
+}
+
+.img-modal {
+    width: 40px;
+    /* ancho */
+    height: 40px;
+    /* alto */
+
+    float: right;
+    /* margin-right: 3px; */
+    /* border: solid red 1px; */
+}
+
+.card:hover {
+    background-color: #F4EED0;
+    border: 1px solid #F4EED0;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+/* -------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+    * {
+        /* border: solid red 1px; */
+    }
+
+    .modal-content {
+        width: 350px;
+        height: 600px;
+        border-radius: 5px;
+        background-color: #F4EED0;
+    }
+
+    .modal-dialog {
+        /* modal centrado */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+    }
+
+    /* Estilo para organizar en vertical */
+    .modal-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-left-modal {
+        order: 1;
+    }
+
+    .div-right-modal {
+        order: 2;
+    }
+
+    /* Estilo para el contenedor de las tarjetas */
+    .row {
+        display: inline-block;
+    }
+
+    .col-md-4 .img-modal {
+        max-width: 26%;
+        float: left;
+    }
+
+    .col-md-8 .h6-card {
+        max-width: 70%;
+        float: right;
+    }
+
+    .img-modal {
+        width: 40px;
+        /* ancho */
+        height: 40px;
+        /* alto */
+        float: left;
+    }
+
+    #modal-preview-image {
+        width: 200px;
+        /* ancho */
+        height: 200px;
+        /* alto */
+    }
+}

@@ -127,6 +127,7 @@
                     .then(response => response.json())
                     .then(data => {
                         console.log('Respuesta de la API:', data);
+                        console.log('index: ', data.index);
                     })
                     .catch(error => {
                         console.error('Error al enviar la imagen:', error);

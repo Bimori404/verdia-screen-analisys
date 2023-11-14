@@ -1,3 +1,5 @@
+import "main.js";
+
 // mostrar la imagen y la información en el modal
 function displayImageInModal(imageSrc, title, description) {
     document.getElementById("modal-preview-image").src = imageSrc;
@@ -34,10 +36,47 @@ function displayImageAndAddToHistory(imageSrc, title, description) {
 document.getElementById("analyze-button").addEventListener("click", function () {
     const previewImage = document.getElementById("preview-image");
     if (previewImage.src) {
-        const title = "Título de la imagen"; // Reemplaza con el título deseado
-        const description = "Descripción de la imagen..."; // Reemplaza con la descripción deseada
+        // const title = "Título de la imagen"; // Reemplaza con el título deseado
+        // const description = "Descripción de la imagen..."; // Reemplaza con la descripción deseada
+        switch (data.index) {
+            //
+            case 0:
+                title = "Saludable"
+                descripcion = "Esta planta se encuanta saludable ya que no precenta ninguna anomalia"
+            break;
+            // 
+            case 1:
+                title = "Mosaico"
+                descripcion = "Esta planta presenta caracteristicas de mosaico"
+            break;
+           //
+            case 2:
+                title = "Raya Roja"
+                descripcion = "Esta planta presenta caracteristicas de roya roja"
+            break;
+            //
+            case 3:
+                title = "Roya"
+                descripcion = "Esta planta presenta caracteristicas de roya"
+            break;
+            //
+            case 4:
+                title = "Amarillamiento"
+                descripcion = "Esta planta presenta caracteristicas de amarillamiento "
+            break;
+        }
 
-        displayImageAndAddToHistory(previewImage.src, title, description);
+        /*
+            hola
+            ya no supe que hacer
+            en efecto no le se al jaivascript
+
+            tiempo invertido -> 35min de puro estres
+        */
+        console.log(data.title);
+        console.log(data.descripcion);
+
+        displayImageAndAddToHistory(previewImage.src, data.title, data.descripcion);
     }
 });
 
